@@ -1,16 +1,25 @@
 <template>
   <lightning-card title="HelloExpression" icon-name="custom:custom14">
-    <lightning-input
-      label="First Name"
-      name="firstName"
-      onchange={handleChange}
-    ></lightning-input>
-    <lightning-input
-      label="List Name"
-      name="lastName"
-      onchange={handleChange}
-    ></lightning-input>
+    <div class="slds-m-around_medium">
+      <lightning-input
+        label="First Name"
+        name="firstName"
+        onchange={handleChange}
+      ></lightning-input>
+      <lightning-input
+        label="List Name"
+        name="lastName"
+        onchange={handleChange}
+      ></lightning-input>
 
-    <p class="slds-m-top_medium">Uppercase Full Name : {upperCasedFullName}</p>
+      <p class="slds-m-top_medium">
+        Uppercase Full Name : {upperCasedFullName}
+      </p>
+    </div>
+
+    <c-view-source source="lwc/helloExpression" slot="footer">
+      Use JavaScript expressions in a template. Type something in the input
+      fields to see the recipe in action.
+    </c-view-source>
   </lightning-card>
 </template>
