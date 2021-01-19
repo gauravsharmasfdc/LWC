@@ -6,6 +6,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <custom>false</custom>
+    <tabVisibilities>
+        <tab>Hello</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
