@@ -1,0 +1,35 @@
+<template>
+  <lightning-card title="LDS CreateRecord" icon-name="standard:record">
+    <div class="slds-var-m-around_medium">
+      <lightning-input
+        label="Account Id"
+        value={accountId}
+        disabled
+      ></lightning-input>
+      <lightning-input
+        label="Name"
+        class="slds-var-m-bottom_x-small"
+        onchange={handleNameChange}
+      ></lightning-input>
+
+      <lightning-button
+        label="Create Account"
+        variant="brand"
+        onclick={createAccount}
+      ></lightning-button>
+    </div>
+    <c-view-source slot="footer" source="lwc/ldsCreateRecord">
+      <ul>
+        <li>
+          Create record using LSD <strong>createRecord</strong> function from
+          Importing <strong>lightning/uiRecordApi</strong>
+        </li>
+        <li>
+          <strong>createRecord</strong> take record parameter of type
+          <strong>recordInput</strong>
+        </li>
+        <li><strong>recordInput</strong> is JS object of apiName & fields</li>
+      </ul>
+    </c-view-source>
+  </lightning-card>
+</template>
