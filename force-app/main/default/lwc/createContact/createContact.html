@@ -1,0 +1,20 @@
+<template>
+  <lightning-card title="New Contact" icon-name="standard:contact">
+    <div class="slds-var-m-around_medium">
+      <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_6-of-12">
+          <lightning-input type="text" label="Last Name "></lightning-input>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+          <c-lightning-input-lookup label="Account"></c-lightning-input-lookup>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+          <lightning-input type="email" label="Email"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+          <lightning-input type="tel" label="Phone"></lightning-input>
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+</template>

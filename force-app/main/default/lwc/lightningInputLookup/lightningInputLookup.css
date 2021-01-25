@@ -1,0 +1,21 @@
+.list-font {
+  font-family: var(--lwc-fontFamily, "Arial");
+  font-size: 14px;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.dropdown {
+  position: absolute;
+  z-index: 1;
+
+  margin-top: var(--lwc-spacingXxxSmall, 0.125rem);
+  margin-bottom: var(--lwc-spacingXxxSmall, 0.125rem);
+  border: var(--lwc-borderWidthThin, 1px) solid
+    var(--lwc-colorBorder, rgb(221, 219, 218));
+  border-radius: var(--lwc-borderRadiusMedium, 0.25rem);
+  padding: var(--lwc-spacingXxSmall, 0.25rem) 0;
+
+  background: var(--lwc-colorBackgroundAlt, rgb(255, 255, 255));
+  box-shadow: var(--lwc-shadowDropDown, 0 2px 3px 0 rgba(0, 0, 0, 0.16));
+}

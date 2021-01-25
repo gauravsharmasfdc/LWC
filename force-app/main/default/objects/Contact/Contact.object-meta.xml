@@ -198,11 +198,13 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>NewContact</actionName>
-        <type>Default</type>
+        <content>createContactAuraCmp</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>NewContact</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>

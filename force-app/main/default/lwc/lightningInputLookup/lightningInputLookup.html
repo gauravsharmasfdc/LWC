@@ -1,0 +1,48 @@
+<template>
+  <div>
+    <lightning-input
+      type="search"
+      label={label}
+      name="lookup-search"
+      class="lookup-search"
+      onclick={handleLookupSearchClick}
+      onkeyup={handleUserInput}
+    ></lightning-input>
+  </div>
+
+  <div
+    class="dropdown slds-hide"
+    onmouseover={showDropdown}
+    onmouseout={hideDropdown}
+  >
+    <ul
+      class="lookup__list visible"
+      onmouseover={showDropdown}
+      onmouseout={hideDropdown}
+    >
+      <template for:each={searchResult} for:item="obj">
+        <li
+          key={obj.Id}
+          class="default lookup__item uiAutocompleteOption forceSearchInputLookupDesktopOption"
+        >
+          <a role="option" class="slds-text-color_default text-decoration-none">
+            <div class="slds-media__figure">
+              <lightning-input
+                type="checkbox-button"
+                label="Input One"
+                name="input1"
+                data-id={obj.Name}
+                onchange={handleRecordSelection}
+              ></lightning-input>
+            </div>
+            <div class="slds-truncate slds-media__body">
+              <div class="primaryLabel slds-truncate slds-lookup__result-text">
+                {obj.Name}
+              </div>
+            </div>
+          </a>
+        </li>
+      </template>
+    </ul>
+  </div>
+</template>
